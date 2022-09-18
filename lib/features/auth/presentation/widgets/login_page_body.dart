@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:fruit_market/core/utils/constants.dart';
 import 'package:fruit_market/core/widgets/horizontal_space.dart';
 import 'package:fruit_market/core/widgets/vertical_space.dart';
+import 'package:fruit_market/features/auth/presentation/pages/complete_information.dart';
 import 'package:fruit_market/features/auth/presentation/widgets/login_button.dart';
 
 class LoginPageBody extends StatelessWidget {
@@ -53,7 +54,11 @@ class LoginPageBody extends StatelessWidget {
                 ),
                 Expanded(
                   child: LoginButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.of(context).push(MaterialPageRoute(
+                          builder: (context) =>
+                              const CompleteInformationPage()));
+                    },
                     icon: 'assets/images/fb.png',
                   ),
                 ),
