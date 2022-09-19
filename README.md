@@ -1,4 +1,4 @@
-# fruit_market
+# fruit_market (A project in progress)
 
 A new Flutter project.
 
